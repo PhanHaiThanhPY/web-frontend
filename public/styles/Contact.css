@@ -1,0 +1,354 @@
+*body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: linotype-sabon, sans-serif;
+    color: #807F83;
+    position: relative;
+}
+.header{
+    width: 100%;
+    max-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #FFF;
+}
+.header .wrap{
+    position: relative;
+}
+#branding{
+    float: left;
+    padding-bottom: 20px;
+}
+.wrap{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    width: 60%;
+    height: 70px;
+    padding-left: 30px;
+    float: left;
+    display: flex;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    list-style: none;
+}
+li a{
+    display: inline-block;
+    color: #807F83;
+    text-align: center;
+    padding:14px 16px ;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu ul :hover{
+    color: #007d68;
+}
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+
+.menu > ul{
+    height: 20px;
+
+}
+.menu > ul > li{
+    display: inline-block;
+    position: relative;
+   padding-bottom: 30px;
+
+}
+.menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 15px;
+    width: 300px;
+    background-color : #74CBC8;
+    margin-top: 52px;
+    padding-top: 0;
+    /* padding-bottom: 0; */
+}
+.menu > ul > li > ul li{
+    /* padding: 10px 0; */
+    border-bottom: 1px solid #dddddd;
+    
+    
+}
+.menu > ul > li > ul li a{
+    color: #fff;
+    text-align: left;
+    
+}
+.menu > ul > li > ul :hover{
+    color: #78a22f;
+}
+ul li:last-child{
+    border: none;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+
+/*  */
+#static{
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}  
+.page-banner .wrap {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+.banner-content{
+    /* margin: auto 0 110px 0; */
+    color: #fff;
+    
+}
+#static.page-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#static.page-banner h1 {
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 9px rgb(63 68 64 / 50%);
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 40px;  
+}
+
+.page-banner .wrap {
+    position: relative;
+}
+.warp {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.banner-widgets .banner-widget {
+    width: 50%;
+    
+}
+.page-banner .banner-widget p {
+    font-size: 1.5rem;
+    color: #06364C;
+}
+.page-banner .banner-widget {
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+.page-banner .banner-widget {
+    position: relative;
+}
+.page-banner .banner-widget {
+    padding: 1.8rem 1.8rem 1.6rem 1.8rem;
+    color: #fff;
+    background: #005A84;
+}
+.page-banner .banner-widget h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.9rem;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1.1;
+    margin-left: 40px;
+}
+.page-banner .banner-widget p{
+    margin-left: 40px;
+    font-size: 40px;
+
+}
+/*  */
+.vc_section{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 6rem 0;
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+}
+.vc_section_row_wpb{
+    width: 88%;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wpb_column{
+    padding-top: 0;
+    opacity: 1;
+    width: 100%;
+    float: left;
+}
+.vc_colum-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+.location {
+    width: 100%;
+    height: auto;
+    margin: 0 0 3rem 0;
+    float: left;
+    margin-bottom: 20px;
+}
+.location .location-head {
+    position: relative;
+    z-index: 9;
+}
+.location .location-head h3 {
+    font-size: 1.9rem;
+    letter-spacing: 0;
+    padding: 15px 25px 15px 20px;
+    color: #fff;
+    background: #007d68;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.location .location__body {
+    margin: -150px 30px 0 30px;
+    padding: 30px;
+    background: #f7f7f8;
+    position: relative;
+    z-index: 10;
+    
+}
+.location .location__body h4 {
+    font-size: 1.8rem;
+    font-family: linotype-sabon, sans-serif;
+    line-height: 1.25;
+    margin: 0 0 2rem 0;
+    color: #005A84;
+}
+.location .location__body ul {
+    list-style: none;
+    margin: 0 0 2rem 1.75rem;
+    padding-left: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+/*  */
+.content-footer{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background: #f7f7f8;
+}
+.footer-wid .btn-center-alt{
+    background-color: #007d68;
+    padding: 20px;
+    text-decoration: none;
+}
+.footer-wid .btn-center-alt svg{
+    margin-left: 20px;
+}
+.btn-center-alt:hover{
+    background-color: #74CBC8;
+}
+.section-buttom{
+    width: 100%;
+    float: left;
+    color: #807F83;
+    background: #007d68;
+}
+.section-buttom .warp{
+    width: 88%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    
+}
+.warp ::before{
+    content: "";
+    table-layout: fixed;
+}
+.warp ::after{
+    clear: both;
+    display: table;
+    table-layout: fixed;
+}
+.footnav{
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.footnav ul{
+    list-style: none;
+    
+}
+.menu-1 li{
+    float: left;
+    border: none;
+    position: relative;
+}
+.menu-1 li a{
+    color: #fff;
+    letter-spacing: .094rem;
+    font-size: 20px;
+    display: inline-block;
+    padding:14px 16px ;
+    text-decoration: none;
+   
+}
+.footnav li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #78a22f;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.legal-logos p{
+    font-size: 1.4rem;
+    margin: 0 0 4px 0;
+}
+.legal-logos a{
+    text-decoration: none;
+}
+.legal-logos a:link{
+    color: #74CBC8;
+}
+.legal-logos img{
+    margin: 0 0 8px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.made-by a{
+    transition: color 0.2s ease-in-out;
+}
+.warp .legal{
+    float: right;
+}
