@@ -1,2 +1,2 @@
 1. npm i
-2. npm run nodemon-index
+2. node index.js
